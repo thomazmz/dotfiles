@@ -17,12 +17,16 @@ BREW_PACKAGES=(
 
 BREW_CASKS=(
     authy
+    clion
+    datagrip 
     docker
     google-chrome
+    intellij-idea
     postman
     slack
     spotify
     visual-studio-code
+    webstorm
 )
 
 MACOS_APP_STORE_APPLICATIONS=(
