@@ -3,6 +3,7 @@
 set_macos_defaults() {
 
     printf "${BOOTSTRAPPER}BOOTSTRAPPER${OFF} - ${BOLD}Setting MacOS defaults ${OFF} \n"
+    printf "\n"
 
     # Set macos dock height
     defaults write com.apple.dock tilesize -int 25

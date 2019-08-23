@@ -1,12 +1,11 @@
 #!/bin/sh
 
-source config.sh
-source app.sh
-source brew.sh
-source defaults.sh
-source git.sh
-source macos.sh
-source terminal.sh
+source install.config
+source utils/app.sh
+source utils/brew.sh
+source utils/defaults.sh
+source utils/git.sh
+source utils/terminal.sh
 
 BOLD="\033[1m"
 BOOTSTRAPPER='\033[1;3;32m'
@@ -31,6 +30,8 @@ install_brew_fonts
 install_brew_formulas
 app_install
 set_macos_defaults
+install_omzsh
+install_powerlevel10k
 set_zshrc_profile
 set_gitignore_profile
 set_gitconfig_profile
