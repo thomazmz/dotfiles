@@ -1,8 +1,6 @@
 # !/bin/sh
 
 app_install() {
-
-    # Install App Store applications
     printf "${YELLOW}Warning${OFF}"
     printf "\n${BOLD}To proceed, make shure you're logged into App Store.${OFF}\n"
     read -p "Do you want to be redirected to App Store and sign in? [Y/n]" -n 1 -rs
@@ -20,5 +18,4 @@ app_install() {
         mas install $application
         printf "\n"
     done
-
 }
