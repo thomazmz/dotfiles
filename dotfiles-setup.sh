@@ -46,3 +46,4 @@ set_gitconfig_profile
 # .gitconfig
 # .gitignore
 # generate ssh key
+# Setup visual studio code
