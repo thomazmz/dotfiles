@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source install.config
+source dotfiles.config
 source utils/app.sh
 source utils/brew.sh
 source utils/defaults.sh
@@ -33,8 +33,8 @@ set_macos_defaults
 install_omzsh
 install_powerlevel10k
 set_zshrc_profile
-set_gitignore_profile
-set_gitconfig_profile
+# set_gitignore_profile
+# set_gitconfig_profile
 
 # TODO :
 # Install Powerlevel10k (https://github.com/romkatv/powerlevel10k#i-cannot-make-powerlevel10k-work-with-my-plugin-manager-help)
