@@ -6,10 +6,11 @@ source utils/brew.sh
 source utils/defaults.sh
 source utils/git.sh
 source utils/terminal.sh
+source utils/ssh.sh
 
 BOLD="\033[1m"
 BOOTSTRAPPER='\033[1;3;32m'
-WARNING='\033[0;33m'
+YELLOW='\033[0;33m'
 OFF="\033[m"
 
 printf "\n${YELLOW}Warning${OFF}"
@@ -28,11 +29,12 @@ update_brew
 install_brew_casks
 install_brew_fonts
 install_brew_formulas
-app_install
-set_macos_defaults
+install_macos_apps
 install_omzsh
-install_powerlevel10k
 set_zshrc_profile
+set_macos_defaults
+generate_ssh_key
+
 # set_gitignore_profile
 # set_gitconfig_profile
 

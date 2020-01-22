@@ -1,6 +1,6 @@
 # !/bin/sh
 
-app_install() {
+install_macos_apps() {
     printf "${YELLOW}Warning${OFF}"
     printf "\n${BOLD}To proceed, make shure you're logged into App Store.${OFF}\n"
     read -p "Do you want to be redirected to App Store and sign in? [Y/n]" -n 1 -rs
