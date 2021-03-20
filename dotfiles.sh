@@ -14,7 +14,7 @@ YELLOW='\033[0;33m'
 OFF="\033[m"
 
 printf "\n${YELLOW}Warning${OFF}"
-printf "\n${BOLD}Make shure you are not running this shell script blindly and that you had completely read and understood this script.${OFF}\n"
+printf "\n${BOLD}Make shure you are not running this code blindly and that you had completely read and understood this script.${OFF}\n"
 read -p "Are you shure you want to continue? [y/N]" -n 1 -rs
 printf "\n"
 if [[ ! $REPLY =~ ^[Yy]$ ]]; then
@@ -48,4 +48,5 @@ generate_ssh_key
 # .gitconfig
 # .gitignore
 # generate ssh key
-# Setup visual studio code
+# Load vscode settings
+# Instal vscode extensions
